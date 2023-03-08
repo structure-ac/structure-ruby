@@ -11,5 +11,11 @@ require "structure"
 # require "pry"
 # Pry.start
 
+client = Structure::Client.new(api_key: ENV["STRUCTURE_API_KEY"])
+
+puts
+puts "We've created a 'client' variable as a Structure::Client using ENV['STRUCTURE_API_KEY'] as the API key."
+puts
+
 require "irb"
 IRB.start(__FILE__)

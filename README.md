@@ -56,19 +56,19 @@ client.jobs.list(company_id: 1, per_page: 5, offset: 1)
 ### Account
 
 ```ruby
-client.me
+client.account.me
 ```
 
 ### Company
 
 ```ruby
-client.companies.find('microsoft')
+client.company.find('microsoft')
 ```
 
 ### Person
 
 ```ruby
-client.people.find('johndoe')
+client.person.find('johndoe')
 ```
 
 ### Jobs

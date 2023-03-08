@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/structure_ac/version"
+require_relative "lib/structure/version"
 
 Gem::Specification.new do |spec|
   spec.name = "structure_ac"
@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "API access to structure.ac"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
+  spec.homepage = "https://www.structure.ac"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/structure-ac/structure-ruby.git"
@@ -29,6 +30,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Uncomment to register a new dependency of your gem
-  spec.add_dependency "faraday", "~> 1.7"
-  spec.add_dependency "faraday-middleware", "~> 1.1"
+  spec.add_dependency "faraday"
 end
