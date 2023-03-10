@@ -1,7 +1,7 @@
 module Structure
   class PersonResource < Resource
     def find(id)
-      Person.new get_request("people", params: {id: id}).body
+      Person.new get_request("people/#{id}").body
     end
   end
 end

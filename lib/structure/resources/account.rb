@@ -1,6 +1,6 @@
 module Structure
   class AccountResource < Resource
-    def me
+    def info
       Account.new get_request("me").body
     end
   end

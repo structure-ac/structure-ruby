@@ -56,7 +56,7 @@ client.jobs.list(company_id: 1, per_page: 5, offset: 1)
 ### Account
 
 ```ruby
-client.account.me
+client.account.info
 ```
 
 ### Company
