@@ -2,7 +2,7 @@
 ## SDK Installation
 
 ```bash
-gem install openapi
+gem install structure
 ```
 
 <!-- End SDK Installation -->
@@ -10,14 +10,10 @@ gem install openapi
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
 ```ruby
-require_relative sdk
+require_relative structure
 
-s = sdk::SDK.new
-s.config_security(
-  security=Shared::Security(
-    bearer_auth="Bearer YOUR_BEARER_TOKEN_HERE",
-  )
-)
+
+s = structure::Structure.new
 
    
 req = operations.Operations::EnrichCompanyRequest(
@@ -36,25 +32,29 @@ if ! res.body.nil?
 <!-- End SDK Example Usage -->
 
 <!-- Start SDK Available Operations -->
-## SDK Available Operations
+## Available Resources and Operations
 
 
+### [accounts](docs/accounts/README.md)
 
-* `list_users` - Show current user accounts
+* [list_users](docs/accounts/listusers.md) - Show current user accounts
 
+### [companies](docs/companies/README.md)
 
-* `enrich` - Enrich a company profile
-* `list_employees` - List company employees
-* `list_jobs` - List company jobs
-* `search` - Search Companies
+* [enrich](docs/companies/enrich.md) - Enrich a company profile
+* [list_employees](docs/companies/listemployees.md) - List company employees
+* [list_jobs](docs/companies/listjobs.md) - List company jobs
+* [search](docs/companies/search.md) - Search Companies
 
+### [people](docs/people/README.md)
 
-* `enrich` - Enrich a person profile
-* `search` - Search People
+* [enrich](docs/people/enrich.md) - Enrich a person profile
+* [search](docs/people/search.md) - Search People
 
+### [user](docs/user/README.md)
 
-* `login` - Login user
-* `me` - Show current user
+* [login](docs/user/login.md) - Login user
+* [me](docs/user/me.md) - Show current user
 
 <!-- End SDK Available Operations -->
 

@@ -1,4 +1,9 @@
-<!-- Start SDK Example Usage -->
+# enrich
+Available in: `companies`
+
+Enrich a company profile
+
+## Example Usage
 ```ruby
 require_relative structure
 
@@ -8,7 +13,7 @@ s = structure::Structure.new
    
 req = operations.Operations::EnrichCompanyRequest(
   path_params=Operations::EnrichCompanyRequest(
-    id="89bd9d8d-69a6-474e-8f46-7cc8796ed151",
+    id="a05dfc2d-df7c-4c78-8a1b-a928fc816742",
   ),
 )
     
@@ -18,5 +23,3 @@ if ! res.body.nil?
     # handle response
 
 ```
-
-<!-- End SDK Example Usage -->
